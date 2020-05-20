@@ -1,5 +1,5 @@
 # StreamerLandingPage
-<h3>Projeto Landing Page para Streamer<h3>
+<h3>Projeto Landing Page para Streamers<h3>
 
 <h4>Desenolvi o projeto com o objetivo de criar uma página para streamers divulgarem seu canal de 
   stream na Twitch, YouTube e demais redes sociais, na forma de página de apresentação.<h4>
