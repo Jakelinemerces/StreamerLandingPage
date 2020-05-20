@@ -2,13 +2,17 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1.0"/>
         <!--Styles-->
         <link type="text/css" rel="stylesheet" href="assets/css/styles.css"/>
         <!--Font-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet"/>
         <!--FontAwesome-->
         <script src="https://kit.fontawesome.com/70dd3c5073.js" crossorigin="anonymous"></script>
+        <!--Scripts-->
+        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/mobile.js"></script>
+
         <title>ChumKiu - Home</title>
     </head>
     <body>
@@ -18,13 +22,14 @@
                     <div class="logoimg"></div>
                 </div>
                 <div class="menu">
-                    <nav>
+                    <a href="javascript:void(0);" class="fas fa-bars menu-mobile" onclick="myFunction()"></a>
+                    <nav id="menuMobile">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">My Setup</a></li>
-                            <li><a href="#">Live Stream</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#aboutus">About us</a></li>
+                            <li><a href="#mysetup">My Setup</a></li>
+                            <li><a href="#stream">Live Stream</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,7 +37,7 @@
         </header>
         <main>
             <!--BANNERS-->
-            <section class="banner">
+            <section class="banner" id="home">
                 <div class="sliders">
                 <!--Banner 01-->
                     <div class="slide">
@@ -70,7 +75,7 @@
                 </div>
             </section>
             <!--ABOUT US-->
-            <section class="default light">
+            <section class="default light" id="aboutus">
                 <div class="section-title">
                     About us
                 </div>
@@ -93,7 +98,7 @@
                 </div>
             </section>
             <!--SETUP-->
-            <section class="default dark">
+            <section class="default dark" id="mysetup">
                 <div class="section-title">
                     My Setup
                 </div>
@@ -122,7 +127,7 @@
                         </div>
                         <div class="section-service">
                             <i class="fas fa-ethernet"></i>
-                            <h4>Internet Connection</h4>
+                            <h4>Internet</h4>
                             <p>Claro Fiber</p>
                             <p>240Mb/s</p>
                         </div>
@@ -130,7 +135,7 @@
                 </div>
             </section>
             <!--LIVE STREAM-->
-            <section class="default light">
+            <section class="default light" id="stream">
                 <div class="section-title">
                     LIVE STREAM
                 </div>
@@ -154,7 +159,7 @@
                 </div>
             </section>
             <!--CONTACT-->
-            <section class="default dark">
+            <section class="default dark" id="contact">
                 <div class="section-title">Contact</div>
                 <div class="section-desc2">message</div>
                 <div class="section-body">
@@ -183,7 +188,7 @@
                         <a href="#"><i class="fab fa-facebook-square"></i></a>
                     </div>
                 </div>
-                <div class="section-desc2">Copyright © 2020 ChumKiu - All rights reserved </div>
+                <div id="copyright" class="section-desc2">Copyright © 2020 ChumKiu - All rights reserved</div>
             </section>
         </footer>
     </body>
